@@ -1,0 +1,23 @@
+[toolchain]
+anchor_version = "1.2.0"
+package_manager = "npm"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+nft_staking = "7u8ZNXw87H75SW6fpMPfGFN8n1G6qxoigLFp9BbMNFsb"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "npm test"
+
+[surfpool]
+online = true
+datasource_rpc_url = "https://api.mainnet-beta.solana.com"
+
+[hooks]
